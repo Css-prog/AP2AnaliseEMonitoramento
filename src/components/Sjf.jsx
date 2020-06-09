@@ -74,7 +74,7 @@ export default class Eds extends Component {
 
                      while(i < total){
 
-                         if(menorAtual > fila[i]){
+                         if(menorAtual >= fila[i]){
                               menorAtual = fila[i];
                                 j = i;
                           } else {
@@ -183,7 +183,7 @@ export default class Eds extends Component {
     }
     
     _handlerInputTempoMinimoAtendimentoOnChange = (e) => {
-        if (e.target.value >= 1) {
+        if (e.target.value <= 1) {
             this.setState({ tempoMinimoAtendimento: 1 })
         } else {
             this.setState({ tempoMinimoAtendimento: e.target.value })
