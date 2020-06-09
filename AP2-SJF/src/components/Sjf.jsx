@@ -74,7 +74,7 @@ export default class Sjf extends Component {
 
                      while(i < total){
 
-                         if(menorAtual > fila[i]){
+                         if(menorAtual >= fila[i]){
                               menorAtual = fila[i];
                                 j = i;
                           } else {
